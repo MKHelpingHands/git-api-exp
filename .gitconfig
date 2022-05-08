@@ -1,0 +1,9 @@
+[fetch]
+    prune = true
+
+[alias]
+    empty = "git commit --allow-empty"
+
+[user]
+    name = "Karan"
+    email = "karan.antham@gmail.com"
