@@ -1,10 +1,10 @@
 id,FOOD NAME,SCIENTIFIC NAME,GROUP,SUB GROUP,identity
-1,Angelica,Angelica keiskei,Herbs and Spices,Herbs,01010061
-2,Savoy cabbage,Brassica oleracea var. sabauda,Vegetables,Cabbages,1101006
-3,Silver linden,Tilia argentea,Herbs and Spices,Herbs,2101006131
-4,Kiwi,Actinidia chinensis,Fruits,Tropical fruits,3101006s
-5,Allium (Onion),Allium,Vegetables,Onion-family vegetables,4101006
-6,Garden onion,Allium cepa,Vegetables,Onion-family vegetables,5101006
-7,Leek,Allium porrum,Vegetables,Onion-family vegetables,6101006
-8,Garlic,Allium sativum,Herbs and Spices,Herbs,7101006
-9,Chives,Allium schoenoprasum,Herbs and Spices,Herbs,8101006
+1,Angelica,Angelica keiskei,Herbs and Spices,Herbs,0101006166
+2,Savoy cabbage,Brassica oleracea var. sabauda,Vegetables,Cabbages,110100666
+3,Silver linden,Tilia argentea,Herbs and Spices,Herbs,210100613166
+4,Kiwi,Actinidia chinensis,Fruits,Tropical fruits,3101006s66
+5,Allium (Onion),Allium,Vegetables,Onion-family vegetables,410100666
+6,Garden onion,Allium cepa,Vegetables,Onion-family vegetables,510100666
+7,Leek,Allium porrum,Vegetables,Onion-family vegetables,610100666
+8,Garlic,Allium sativum,Herbs and Spices,Herbs,710100666
+9,Chives,Allium schoenoprasum,Herbs and Spices,Herbs,810100666
