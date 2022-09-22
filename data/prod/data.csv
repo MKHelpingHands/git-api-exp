@@ -1,10 +1,10 @@
-id,FOOD NAME,SCIENTIFIC NAME,GROUP,SUB GROUP,identity
-1,Angelica,Angelica keiskei,Herbs and Spices,Herbs,01010061
-2,Savoy cabbage,Brassica oleracea var. sabauda,Vegetables,Cabbages,1101006
-3,Silver linden,Tilia argentea,Herbs and Spices,Herbs,2101006131
-4,Kiwi,Actinidia chinensis,Fruits,Tropical fruits,3101006s
-5,Allium (Onion),Allium,Vegetables,Onion-family vegetables,4101006
-6,Garden onion,Allium cepa,Vegetables,Onion-family vegetables,5101006
-7,Leek,Allium porrum,Vegetables,Onion-family vegetables,6101006
-8,Garlic,Allium sativum,Herbs and Spices,Herbs,7101006
-9,Chives,Allium schoenoprasum,Herbs and Spices,Herbs,8101006
+id,FOOD NAME,SCIENTIFIC NAME,GROUP,SUB GROUP,identity,country
+1,Angelica,Angelica keiskei,Herbs and Spices,Herbs,01010061,sweden
+2,Savoy cabbage,Brassica oleracea var. sabauda,Vegetables,Cabbages,1101006,sweden
+3,Silver linden,Tilia argentea,Herbs and Spices,Herbs,2101006131,denmark
+4,Kiwi,Actinidia chinensis,Fruits,Tropical fruits,3101006s,denmark
+5,Allium (Onion),Allium,Vegetables,Onion-family vegetables,4101006,denmark
+6,Garden onion,Allium cepa,Vegetables,Onion-family vegetables,5101006,sweden
+7,Leek,Allium porrum,Vegetables,Onion-family vegetables,6101006,denmark
+8,Garlic,Allium sativum,Herbs and Spices,Herbs,7101006,sweden
+9,Chives,Allium schoenoprasum,Herbs and Spices,Herbs,8101006,denmark
