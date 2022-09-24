@@ -1,10 +1,10 @@
 name: generate-pdf-folder-artifacts
 
 on:
-  pull_request: []
+  pull_request:
   push:
     branches:
-     - master
+     - main
 
 jobs:
   GeneratePdfArtifacts:
