@@ -31,6 +31,7 @@ jobs:
           echo  The suffix is "${{inputs.suffix}}"
           echo  The file_name is "${{inputs.file_name}}"
           echo  The folder is ${{inputs.folder}}
+          echo $inputs
       # - name: Checkout
       - uses: actions/checkout@v2
         with:
