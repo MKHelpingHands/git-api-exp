@@ -35,7 +35,7 @@ jobs:
           fetch-depth: 0
       - name: Format report
         run: |
-          echo "Creating audit report..."
+          echo "Creating audit report... with download"
           git log -c --pretty=###%H»¦«%aN»¦«%aD»¦«%s.%b $GITHUB_WORKSPACE/${{ inputs.folder }}/prod/${{ inputs.file_name }}${{ inputs.suffix }}.csv | awk -f $GITHUB_WORKSPACE/src/preFormat.awk > TxWhitelistAuditReport${{ inputs.suffix }}.csv
           echo ::set-output name=csvString::$(cat $GITHUB_WORKSPACE/TxWhitelistAuditReport${{ inputs.suffix }}.csv)
       - name: update Artifacts
