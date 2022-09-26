@@ -1,6 +1,13 @@
 name: Create audit report on GaaS
 on:
-  workflow_call:
+  push:
+    branches:
+      - main
+  pull_request:
+    # Sequence of patterns matched against refs/heads
+    branches:
+      - main
+  workflow_dispatch:
     inputs:
       suffix:
         required: false
@@ -24,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print the input tag to STDOUT
-        run: echo  The tags are ${{ inputs.file_name }}
+        run: echo  The tags are ${{ inputs.tags }}
       # - name: Checkout
       - uses: actions/checkout@v2
         with:
