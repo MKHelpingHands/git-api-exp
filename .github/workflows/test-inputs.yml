@@ -6,7 +6,7 @@ on:
   pull_request:
     branches:
       - main
-  workflow_dispatch:
+  workflow_call:
     inputs:
       suffix:
         type: string
@@ -26,4 +26,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print the input tag to STDOUT
-        run: echo  The tags are ${{ inputs.tags }}
+        run: echo  The tags are ${{ inputs.suffix }} ${{ inputs.file_name }} ${{ inputs.folder }} ${{ inputs.email }}
