@@ -3,6 +3,19 @@ on:
   push:
     branches:
       - main
+    inputs:
+      suffix:
+        type: string
+        default: ""
+      file_name:
+        type: string
+        default: "data"
+      folder:
+        type: string
+        default: "data"
+      email:
+        type: string
+        default: "karunakar.antham@seb.se"
   pull_request:
     branches:
       - main
