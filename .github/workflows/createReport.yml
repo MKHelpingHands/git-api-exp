@@ -48,6 +48,4 @@ jobs:
           name: csv-audit-report
           path: TxWhitelistAuditReport${{ inputs.suffix }}.csv
       - name: download Artifacts
-        uses: actions/download-artifact@v3
-        with:
-          name: csv-audit-report
+        run: curl -H "Accept: application/vnd.github+json" -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -L -o firmware.zip "https://api.github.com/repos/ExpressLRS/ExpressLRS/actions/artifacts/308108746/zip" 
