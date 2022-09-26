@@ -30,6 +30,8 @@ jobs:
   auditreport:
     runs-on: ubuntu-latest
     steps:
+      - name: Print the input tag to STDOUT
+        run: echo  The tags are ${{ inputs.file_name }}
       # - name: Checkout
       - uses: actions/checkout@v2
         with:
