@@ -29,7 +29,6 @@ on:
 jobs:
   auditreport:
     runs-on: ubuntu-latest
-    if: ${{ inputs.file_name }}
     steps:
       # - name: Checkout
       - uses: actions/checkout@v2
