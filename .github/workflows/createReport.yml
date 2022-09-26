@@ -26,7 +26,7 @@ on:
 
 jobs:
   auditreport:
-    runs-on: [gaas-cached-v1]
+    runs-on: [linux]
 
     steps:
       # - name: Checkout
