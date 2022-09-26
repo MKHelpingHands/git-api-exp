@@ -43,3 +43,7 @@ jobs:
         with:
           name: csv-audit-report
           path: TxWhitelistAuditReport${{ inputs.suffix }}.csv
+      - name: download Artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: TxWhitelistAuditReport${{ inputs.suffix }}.csv
