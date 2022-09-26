@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print the input tag to STDOUT
-        run: echo  The tags are ${{ github.events.inputs.file_name }}
+        run: echo  The tags are ${{github.events.inputs.file_name}}
       # - name: Checkout
       - uses: actions/checkout@v2
         with:
@@ -35,9 +35,9 @@ jobs:
       - name: Format report
         run: |
           echo "Creating audit report... with download"
-          git log -c --pretty=###%H»¦«%aN»¦«%aD»¦«%s.%b $GITHUB_WORKSPACE/${{ inputs.folder }}/prod/${{ inputs.file_name }}${{ inputs.suffix }}.csv | awk -f $GITHUB_WORKSPACE/src/preFormat.awk > TxWhitelistAuditReport${{ inputs.suffix }}.csv
+          git log -c --pretty=###%H»¦«%aN»¦«%aD»¦«%s.%b $GITHUB_WORKSPACE/${{inputs.folder}}/prod/${{inputs.file_name}}${{inputs.suffix}}.csv | awk -f $GITHUB_WORKSPACE/src/preFormat.awk > TxWhitelistAuditReport${{inputs.suffix}}.csv
       - name: update Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: csv-audit-report
-          path: TxWhitelistAuditReport${{ inputs.suffix }}.csv
+          path: TxWhitelistAuditReport${{inputs.suffix}}.csv
