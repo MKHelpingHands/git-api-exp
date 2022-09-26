@@ -1,6 +1,6 @@
 name: Create audit report on GaaS
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
       suffix:
         required: false
