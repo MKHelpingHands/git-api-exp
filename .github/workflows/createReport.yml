@@ -24,6 +24,7 @@ on:
 jobs:
   auditreport:
     runs-on: ubuntu-latest
+    shell: pwsh
     steps:
       - name: Print the input tag to STDOUT
         run: |
