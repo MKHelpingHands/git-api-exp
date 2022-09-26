@@ -1,0 +1,29 @@
+name: test
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      suffix:
+        type: string
+        default: ''
+      file_name:
+        type: string
+        default: 'data'
+      folder:
+        type: string
+        default: 'data'
+      email:
+        type: string
+        default: 'karunakar.antham@seb.se'
+
+jobs:
+  auditreport:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the input tag to STDOUT
+        run: echo  The tags are ${{ inputs.tags }}
