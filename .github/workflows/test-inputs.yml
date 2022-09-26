@@ -26,4 +26,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print the input tag to STDOUT
-        run: echo  The tags are ${{ inputs.suffix }} ${{ inputs.file_name }} ${{ inputs.folder }} ${{ inputs.email }}
+        run: echo  The tags are ${{ github.events.inputs.suffix }} ${{ inputs.file_name }} ${{ inputs.folder }} ${{ inputs.email }}

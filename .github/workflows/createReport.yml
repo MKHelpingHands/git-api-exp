@@ -7,29 +7,27 @@ on:
     # Sequence of patterns matched against refs/heads
     branches:
       - main
-  schedule:
-    - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
       suffix:
         type: string
-        default: ''
+        default: ""
       file_name:
         type: string
-        default: 'data'
+        default: "data"
       folder:
         type: string
-        default: 'data'
+        default: "data"
       email:
         type: string
-        default: 'karunakar.antham@seb.se'
+        default: "karunakar.antham@seb.se"
 
 jobs:
   auditreport:
     runs-on: ubuntu-latest
     steps:
       - name: Print the input tag to STDOUT
-        run: echo  The tags are ${{ inputs.tags }}
+        run: echo  The tags are ${{ github.events.inputs.file_name }}
       # - name: Checkout
       - uses: actions/checkout@v2
         with:
