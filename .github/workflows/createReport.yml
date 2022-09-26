@@ -24,14 +24,13 @@ on:
 jobs:
   auditreport:
     runs-on: ubuntu-latest
-    shell: pwsh
     steps:
       - name: Print the input tag to STDOUT
         run: |
-          echo  The tags are ${{github.events.inputs.file_name}}
-          echo  The suffix is ${{inputs.suffix}}
-          echo  The file_name is ${{inputs.file_name}}
-          echo  The folder is ${{inputs.folder}}
+          echo  The tags are "${{github.events.inputs.file_name}}"
+          echo  The suffix is "${{inputs.suffix}}""
+          echo  The file_name is "${{inputs.file_name}}"
+          echo  The folder is "${{inputs.folder}}"
       # - name: Checkout
       - uses: actions/checkout@v2
         with:
