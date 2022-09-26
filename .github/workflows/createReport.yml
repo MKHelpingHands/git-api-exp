@@ -1,5 +1,13 @@
 name: Create audit report on GaaS
 on:
+  push:
+    branches:
+      - main
+  pull_request:
+    # Sequence of patterns matched against refs/heads
+    branches:
+      - main
+  workflow_dispatch:
   # Triggers the workflow on push or pull request events but only for the master branch
   workflow_call:
     inputs:
