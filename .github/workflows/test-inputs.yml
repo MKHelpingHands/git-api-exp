@@ -10,16 +10,16 @@ on:
     inputs:
       suffix:
         type: string
-        default: ''
+        default: ""
       file_name:
         type: string
-        default: 'data'
+        default: "data"
       folder:
         type: string
-        default: 'data'
+        default: "data"
       email:
         type: string
-        default: 'karunakar.antham@seb.se'
+        default: "karunakar.antham@seb.se"
 
 jobs:
   auditreport:
