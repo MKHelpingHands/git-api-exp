@@ -1,10 +1,9 @@
-name: Create audit report on GaaS
+name: Create a report
 on:
   push:
     branches:
       - main
   pull_request:
-    # Sequence of patterns matched against refs/heads
     branches:
       - main
   workflow_dispatch:
@@ -27,7 +26,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print the input tag to STDOUT
-        run: echo  The tags are ${{github.events.inputs.file_name}}
+        run: |
+          echo  The tags are ${{github.events.inputs.file_name}}
+          echo  The suffix is ${{inputs.suffix}}
+          echo  The file_name is ${{inputs.file_name}}
+          echo  The folder is ${{inputs.folder}}
       # - name: Checkout
       - uses: actions/checkout@v2
         with:
