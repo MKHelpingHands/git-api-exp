@@ -1,5 +1,37 @@
-name: Create Report
+name: Create audit report on GaaS
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  workflow_call:
+    inputs:
+      suffix:
+        required: false
+        type: string
+        default: ''
+      file_name:
+        required: false
+        type: string
+        default: 'data'
+      folder:
+        required: false
+        type: string
+        default: 'data'
 
-jobs: 
-  auditReport: 
-    echo "edit report"
+jobs:
+  auditreport:
+    runs-on: [gaas-cached-v1]
+
+    steps:
+      # - name: Checkout
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Format report
+        run: |
+          echo "Creating audit report..."
+          git log -c --pretty=###%H»¦«%aN»¦«%aD»¦«%s.%b $GITHUB_WORKSPACE/${{ inputs.folder }}/prod/${{ inputs.file_name }}${{ inputs.suffix }}.csv | awk -f $GITHUB_WORKSPACE/src/preFormat.awk > TxWhitelistAuditReport${{ inputs.suffix }}.csv
+          echo ::set-output name=csvString::$(cat $GITHUB_WORKSPACE/TxWhitelistAuditReport${{ inputs.suffix }}.csv)
+      - name: update Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: csv-audit-report
+          path: TxWhitelistAuditReport${{ inputs.suffix }}.csv
