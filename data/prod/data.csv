@@ -1,5 +1,5 @@
 FOOD NAME,SCIENTIFIC NAME,GROUP,SUB GROUP,identity,country
-Angelica-test-pr,Angelica keiskei,Herbs and Spicessa,Herbs,01010061,se
+Angelica-test-pr-delete-branch-close,Angelica keiskei,Herbs and Spicessa,Herbs,01010061,se
 Savoy cabbage,Brassica oleracea var. sabauda,Vegetables,Cabbages,1101006,se
 Silver linden,Tilia argentea,Herbs and Spices,Herbs,2101006131,dk
 Kiwi,Actinidia chinensis,Fruits,Tropical fruits,3101006s,dk
@@ -7,4 +7,4 @@ Allium (Onion),Allium,Vegetables,Onion-family vegetables,4101006,dk
 Garden onion,Allium cepa,Vegetables,Onion-family vegetables,5101006,dk
 Leek,Allium porrum,Vegetables,Onion-family vegetables,6101006,se
 Garlic,Allium sativum,Herbs and Spices,Herbs,7101006,se
-Chives,Allium schoenoprasum,Herbs and Spices,Herbs,8101006,dk
+Chives-pr,Allium schoenoprasum,Herbs and Spices,Herbs,8101006,dk
